@@ -1,0 +1,175 @@
+<template>
+  <div class="my-page">
+    <page-header>
+      <header-link>贺右军</header-link>
+      <header-title>我的米筑</header-title>
+    </page-header>
+    <page-content>
+      <header class='demos-header'>
+        <h1 class="demos-title">我的订单</h1>
+      </header>
+      <div class="grids grids-small">
+
+        
+        <div @click.native="$refs.alert.open()" class="grid">
+          <div class="grid_icon">
+            <img src="../assets/images/home/page.png" alt="">
+          </div>
+          <p class="grid_label">
+            全部
+          </p>         
+        </div>
+        
+        <alert :title="'Hello'" :content="'Hello there!'" :on-ok="log"  ref="alert"></alert>
+
+        <router-link :to="{ path: 'att_jack' }" class="grid">
+          <div class="grid_icon">
+            <img src="../assets/images/home/button.png" alt="">
+          </div>
+          <p class="grid_label">
+            已提交
+          </p>
+        </router-link>
+
+        <router-link :to="{ path: 'column' }" class="grid">
+          <div class="grid_icon">
+            <img src="../assets/images/home/column.png" alt="">
+          </div>
+          <p class="grid_label">
+            备货中
+          </p>
+        </router-link>
+        <router-link :to="{ path: 'grid' }" class="grid">
+          <div class="grid_icon">
+            <img src="../assets/images/home/grid.png" alt="">
+          </div>
+          <p class="grid_label">
+            待送货
+          </p>
+        </router-link>
+        <router-link :to="{ path: '/list' }" class="grid">
+          <div class="grid_icon">
+            <img src="../assets/images/home/list.png" alt="">
+          </div>
+          <p class="grid_label">
+            已收货
+          </p>
+        </router-link>
+        
+      </div>
+
+      <h2 class="demos-title">我的话题</h2>
+      <div class="grids grids-small">
+        <router-link :to="{ path: 'modal' }" class="grid">
+          <div class="grid_icon">
+            <img src="../assets/images/home/modal.png" alt="">
+          </div>
+          <p class="grid_label">
+            全部
+          </p>
+        </router-link>
+        <router-link :to="{ path: 'preloader' }" class="grid">
+          <div class="grid_icon">
+            <img src="../assets/images/home/preloader.png" alt="">
+          </div>
+          <p class="grid_label">
+            我发起的
+          </p>
+        </router-link>
+        <router-link :to="{ name: 'toast' }" class="grid">
+          <div class="grid_icon">
+            <img src="../assets/images/home/toast.png" alt="">
+          </div>
+          <p class="grid_label">
+            我参与的
+          </p>
+        </router-link>
+        <router-link :to="{ path: 'tab' }" class="grid">
+          <div class="grid_icon">
+            <img src="../assets/images/home/tab.png" alt="">
+          </div>
+          <p class="grid_label">
+            进度相关
+          </p>
+        </router-link>
+        <router-link :to="{ path: 'scroll' }" class="grid">
+          <div class="grid_icon">
+            <img src="../assets/images/home/scroll.png" alt="">
+          </div>
+          <p class="grid_label">
+            材料相关
+          </p>
+        </router-link>
+        <router-link :to="{ path: 'popup' }" class="grid">
+          <div class="grid_icon">
+            <img src="../assets/images/home/window.png" alt="">
+          </div>
+          <p class="grid_label">
+            费用相关
+          </p>
+        </router-link>
+        <router-link :to="{ path: 'popwindow' }" class="grid">
+          <div class="grid_icon">
+            <img src="../assets/images/home/window.png" alt="">
+          </div>
+          <p class="grid_label">
+            投诉
+          </p>
+        </router-link>
+        <router-link :to="{ path: 'popwindow' }" class="grid">
+          <div class="grid_icon">
+            <img src="../assets/images/home/window.png" alt="">
+          </div>
+          <p class="grid_label">
+            建议
+          </p>
+        </router-link>
+        <router-link :to="{ path: 'popwindow' }" class="grid">
+          <div class="grid_icon">
+            <img src="../assets/images/home/window.png" alt="">
+          </div>
+          <p class="grid_label">
+            其他话题
+          </p>
+        </router-link>
+      </div>
+    </page-content>
+  </div>
+</template>
+<script>
+    import Grid from '../components/grid'
+    import {
+        Header,
+        HeaderLink,
+        HeaderTitle
+    } from '../components/header'
+    import Content from '../components/content'
+    import {
+        Alert,
+        Confirm,
+        Prompt,
+        Modal
+    } from '../components/modal'
+
+    export default {
+        components: {
+            'page-header': Header,
+            HeaderLink,
+            HeaderTitle,
+            'page-content': Content,
+            Alert,
+            Confirm,
+            Modal,
+            Prompt,
+            Grid
+        },
+        data() {
+            return {}
+        },
+        methods: {
+            log(m) {
+                console.log(m || 'log')
+            }
+        }
+    }
+</script>
