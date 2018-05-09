@@ -31,6 +31,7 @@ import SidePanel from './demos/SidePanel'
 import Popover from './demos/Popover'
 import Stars from './demos/Stars'
 import CircleProgress from './demos/CircleProgress'
+import Login from './demos/Login'
 
 Vue.use(Router)
 Vue.use(Vum)
@@ -148,6 +149,11 @@ let router = new Router({
             path: '/circle',
             name: 'circle',
             component: CircleProgress
+        },
+        {
+            path: '/login',
+            name: 'login',
+            component: Login
         }
     ]
 })

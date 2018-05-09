@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="89px" height="116px" viewBox="0 0 89 116" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>新建话题 copy 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="11.9732081%" y1="0%" x2="71.8306272%" y2="87.3013053%" id="linearGradient-1">
+            <stop stop-color="#F4A300" offset="0%"></stop>
+            <stop stop-color="#F44E00" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-16.7%" y="-14.6%" width="133.3%" height="133.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.994951105   0 0 0 0 0.350263399   0 0 0 0 0  0 0 0 0.573992301 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2_首页" transform="translate(-661.000000, -953.000000)">
+            <g id="新建话题-copy-3" transform="translate(671.000000, 961.000000)">
+                <g id="Rectangle-5" opacity="0.800139925">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="#F44E00" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+                <g id="话题00" transform="translate(18.000000, 15.000000)" fill="#FFFFFF">
+                    <rect id="Rectangle-6" x="25.7096774" y="12.9262673" width="6.58064516" height="36.4285714" rx="3.29032258"></rect>
+                    <rect id="Rectangle-6" x="10.0023041" y="27.4193548" width="36.4285714" height="6.58064516" rx="3.29032258"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

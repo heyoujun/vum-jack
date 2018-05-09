@@ -1,0 +1,53 @@
+端口：
+\config\index.js
+
+路由:
+package.json--main.js
+
+
+
+import vue文件，目的：
+import BackLink from './directives/back-link'
+
+增加一个路径main.js
+引用文件
+import Login from './demos/Login'
+增加路径
+,
+{
+            path: '/login',
+            name: 'login',
+            component: Login
+        }
+
+login.vue文件，目的：
+在脚本里面先引入组件，再输出组件给模板template使用
+引入组件
+import { Header, HeaderLink, HeaderTitle, SecondHeader } from '../components/header'
+import Content from '../components/content'
+import { Footer, SecondFooter, FooterItem } from '../components/footer'
+import Icon from '../components/icons'
+import { Button } from '../components/buttons'
+import Searchbar from '../components/searchbar'
+输出组件
+export default {
+  components: {
+    'page-header': Header,
+    SecondHeader,
+    HeaderLink,
+    HeaderTitle,
+    'page-content': Content,
+    'page-footer': Footer,
+    SecondFooter,
+    FooterItem,
+    'btn': Button,
+    Icon,
+    Searchbar
+  }
+}
+
+模板template使用
+ <second-footer>
+      <btn>确定</btn>
+ </second-footer>
+

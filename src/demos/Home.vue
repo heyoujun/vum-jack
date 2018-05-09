@@ -9,7 +9,7 @@
         <h3 class="demos-title">个人中心</h3>
       </header>
       <div class="grids grids-small">
-        <router-link :to="{ path: 'page' }" class="grid">
+        <router-link :to="{ path: 'login' }" class="grid">
           <div class="grid_icon">
             <img src="../assets/images/home/page.png" alt="">
           </div>
